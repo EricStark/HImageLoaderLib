@@ -29,7 +29,8 @@
 
 ## Disadvantage:
 
-在没有设置缓存策略时也不能使用压缩策略
+1.在没有设置缓存策略时也不能使用压缩策略  
+2.出现空指针异常，因为该库没有和应用生命周期做同步操作，当应用异常退出时，可能会出现空指针异常  
 
 ## How to update：
 
@@ -64,3 +65,6 @@ TweetLink
 That's it! The first time you request a project JitPack checks out the code, builds it and serves the build artifacts (jar, aar).
 
 If the project doesn't have any GitHub Releases you can use the short commit hash or 'master-SNAPSHOT' as the version.
+### badge
+[![](https://jitpack.io/v/EricStark/HImageLoaderLib.svg)](https://jitpack.io/#EricStark/HImageLoaderLib)
+
